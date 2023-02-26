@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package room_reservation;
+
+service RoomReservation{
+  rpc ServeNotification (NotifRequest) returns (stream NotifResponse);
+}
+
+
+message NotifRequest{
+  int32 user_id = 1;
+
+}
+
+
+message NotifResponse{
+  string message = 1;
+  string creation_time = 2;
+
+}

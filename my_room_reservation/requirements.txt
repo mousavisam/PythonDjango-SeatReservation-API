@@ -1,0 +1,7 @@
+Django==4.1.6
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.2.2
+drf-spectacular==0.25.1
+grpcio==1.51.3
+grpcio-tools==1.51.3
+protobuf==4.22.0

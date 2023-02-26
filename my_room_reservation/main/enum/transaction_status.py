@@ -6,3 +6,9 @@ class TransactionStatus(models.TextChoices):
     PENDING = "PENDING"
     SUCCESS = "SUCCESS"
 
+
+class TransactionType(models.TextChoices):
+    REGISTER = "REGISTER"
+    RESERVE = "RESERVE"
+    CANCELED = "CANCELED"
+    RESELL = "RESELL"

@@ -6,7 +6,7 @@ from ..model.room_entity import Room
 
 
 class Seat(models.Model):
-    price = models.PositiveIntegerField(validators=[MinValueValidator(0.1)])
+    price = models.DecimalField(validators=[MinValueValidator(0.1)], max_digits=12, decimal_places=3)
     position = models.CharField(max_length=12, choices=Position.choices)
     status = models.CharField(max_length=12, choices=SeatStatus.choices)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)

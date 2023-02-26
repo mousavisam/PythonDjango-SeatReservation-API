@@ -10,6 +10,7 @@ class Position(models.TextChoices):
 
 class SeatStatus(models.TextChoices):
     RESERVED = "RESERVED"
+    RESELL = "RESELL"
     UNRESERVED = "UNRESERVED"
 
 
